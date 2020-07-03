@@ -1,0 +1,106 @@
+* {
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: pixelFont;
+   src: url(../minecraftia/Minecraftia-Regular.ttf);
+}
+
+html {
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow-x: hidden;
+}
+
+body {
+   background: white url("../img/kirito.jpg");
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   margin: 0;
+   top: 0;
+   left: 0;
+   font-family: pixelFont;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+
+.center {
+   text-align: center;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.solid {
+   display: none;
+}
+
+.noselect {
+   cursor: default;
+   -webkit-touch-callout: none;
+   /* iOS Safari */
+   -webkit-user-select: none;
+   /* Chrome/Safari/Opera */
+   -khtml-user-select: none;
+   /* Konqueror */
+   -moz-user-select: none;
+   /* Firefox */
+   -ms-user-select: none;
+   /* IE/Edge */
+   user-select: none;
+   /* non-prefixed version, currently
+  not supported by any browser */
+}
+
+
+/* game creator elements */
+
+#gameCreator {
+   background-color: white;
+   height: 384px;
+   width: 768px;
+   position: fixed;
+   top: calc(50vh - 192px);
+   left: calc(50vw - 384px);
+   overflow: hidden;
+   box-sizing: border-box;
+   padding: 0;
+}
+
+#selectedLevel {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 384px;
+   width: 768px;
+   z-index: 10;
+}
+
+.bitBox {
+   z-index: 100;
+   width: 16px;
+   height: 16px;
+   position: relative;
+   float: left;
+   box-sizing: border-box;
+   border: solid black 1px;
+}
+
+.bitBox:hover {
+   border-color: white;
+}
+
+.bitSelected {
+   background-color: rgba(255, 0, 0, 0.5);
+}
+
+#levelSelector {
+   background-color: white;
+   display: inline-block;
+}
