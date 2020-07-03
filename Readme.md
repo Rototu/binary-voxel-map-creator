@@ -5,3 +5,7 @@ A simple page/script for generating binary-value 2D voxel maps for a game I desi
 ## Constraints
 
 The uploaded images used as a background for the voxel map bust be `768px * 384px` in size.  
+
+## Demo
+
+https://rototu.github.io/binary-voxel-map-creator/
